@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrek App</title>
+    <link rel="stylesheet" href="styles.scss">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <header>
+          <h1>Movie<strong>App</strong></h1>
+          <nav></nav>
+          <div class="search"><svg><use xlink:href="#ico-search"></use></svg></div>
+        </header>
+        <h2>Shrek Movies</h2>
+        <section class="movies">
+          <div class="movie">
+            <img src="one.jpg" alt="" class="poster" />
+            <div class="title">Shrek</div>
+            <div class="info">
+              <span class="length">90 min</span>
+              <span class="year">2001</span>
+            </div>
+            <div class="desc">
+                A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.
+            </div>
+          </div>
+          <div class="movie">
+            <img src="two.jpg" alt="" class="poster" />
+            <div class="title">Shrek 2</div>
+            <div class="info">
+              <span class="length">93 min</span>
+              <span class="year">2004</span>
+            </div>
+            <div class="desc">
+                Shrek and Fiona travel to the Kingdom of Far Far Away, where Fiona's parents are King and Queen, to celebrate their marriage. When they arrive, they find they are not as welcome as they thought they would be.
+            </div>
+          </div>
+          <div class="movie">
+            <img src="three.jpg" alt="" class="poster" />
+            <div class="title">Shrek the Third</div>
+            <div class="info">
+              <span class="length">93 min</span>
+              <span class="year">2007</span>
+            </div>
+            <div class="desc">
+                Reluctantly designated as the heir to the land of Far, Far Away, Shrek hatches a plan to install the rebellious Artie as the new king while Princess Fiona tries to fend off a coup d'état by the jilted Prince Charming.
+            </div>
+          </div>
+          <div class="movie">
+            <img src="four.jpg" alt="" class="poster" />
+            <div class="title">Shrek Forever After</div>
+            <div class="info">
+              <span class="length">93 min</span>
+              <span class="year">2010</span>
+            </div>
+            <div class="desc">
+                Rumpelstiltskin tricks a mid-life crisis burdened Shrek into allowing himself to be erased from existence and cast in a dark alternate timeline where Rumpelstiltskin rules supreme.
+            </div>
+          </div>
+        </section>
+        <div class="detail">
+          <svg class="close">
+            <use xlink:href="#close"></use>
+          </svg>
+          <div class="movie">
+     
+            <button class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
+                <g id="Play">
+                  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266   c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267   l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z" fill="#FFFFFF"/>
+                </g>
+              </svg> play movie
+            </button>
+     
+     
+     
+          </div>
+        </div>
+      </div>
+     
+     
+      <!-- Icons -->
+      <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
+        <symbol id="close" viewBox="0 0 212.982 212.982">
+          <g>
+            <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312   c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312   l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937   c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z" fill="#525661"/>
+          </g>
+        </symbol>
+        <symbol id="ico-search">
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#363a47" d="M14.769,14.769c-0.342,0.342-0.896,0.342-1.237,0l-3.756-3.756
+                                                                          c-2.399,1.793-5.801,1.623-7.981-0.557c-2.392-2.392-2.392-6.271,0-8.663s6.271-2.392,8.662,0c2.18,2.181,2.35,5.583,0.557,7.981
+                                                                          l3.756,3.756C15.11,13.873,15.11,14.427,14.769,14.769z M9.219,3.032c-1.709-1.709-4.479-1.709-6.188,0
+                                                                          c-1.708,1.708-1.708,4.479,0,6.188c1.709,1.708,4.479,1.708,6.188,0C10.927,7.51,10.927,4.74,9.219,3.032z"/>
+        </symbol>
+      </svg>
+     
+    <script src="script.js">
+    </script>
+</body>
+</html>
